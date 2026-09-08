@@ -13,7 +13,7 @@ Authorization: Bearer YOUR_TOKEN_HERE
 
 ---
 
-## 🔐 Auth Endpoints
+##  Auth Endpoints
 
 ### Register a New User
 **POST** `/auth/register`

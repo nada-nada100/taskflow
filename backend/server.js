@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 5000;
+
+// Use Render's port or 5000 for local
+const port = process.env.PORT || 5000;
 
 // Import database
 require('./config/db');
@@ -45,5 +47,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`✅ Server is running on http://localhost:${port}`);
+    console.log(`✅ Server is running on port ${port}`);
 });

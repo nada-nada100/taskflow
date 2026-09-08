@@ -79,7 +79,7 @@ if (loginForm) {
             const result = await apiRequest('/auth/login', 'POST', { email, password });
             if (result.ok) {
                 setToken(result.data.token);
-                showToast('🔐 Welcome back!', 'success');
+                showToast(' Welcome back!', 'success');
                 setTimeout(() => window.location.href = 'dashboard.html', 500);
             } else {
                 showError('loginForm', result.data.message || 'Login failed');

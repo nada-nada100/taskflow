@@ -5,7 +5,13 @@ const path = require('path');
 
 // Create database file in backend folder
 const dbPath = path.join(__dirname, '..', 'taskflow.db');
-const db = new sqlite3.Database(dbPath);
+const db = new sqlite3.Database(dbPath, (err) => {
+    if (err) {
+        console.error('❌ Database connection error:', err.message);
+    } else {
+        console.log('✅ Database connected successfully');
+    }
+});
 
 // Create tables if they don't exist
 db.serialize(() => {
