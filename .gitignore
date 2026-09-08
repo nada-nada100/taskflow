@@ -1,0 +1,61 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (SECRETS - IMPORTANT!)
+.env
+.env.local
+.env.*.local
+
+# Database files (don't upload database)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.workspace
+*.iml
+
+# Build and distribution folders
+dist/
+build/
+out/
+*.min.js
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# System files (Windows/Mac)
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Backup files
+*.bak
+*.old
+*.orig
