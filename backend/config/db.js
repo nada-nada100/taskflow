@@ -1,10 +1,12 @@
 // config/db.js - Database setup
 
-const sqlite3 = require('sqlite3').verbose();
+const sqlite3 = require('sqlite3');
 const path = require('path');
 
 // Create database file in backend folder
 const dbPath = path.join(__dirname, '..', 'taskflow.db');
+console.log('📂 Database path:', dbPath);
+
 const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
         console.error('❌ Database connection error:', err.message);
@@ -15,7 +17,6 @@ const db = new sqlite3.Database(dbPath, (err) => {
 
 // Create tables if they don't exist
 db.serialize(() => {
-    // Users table
     db.run(`
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -24,9 +25,11 @@ db.serialize(() => {
             password TEXT NOT NULL,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
-    `);
+    `, (err) => {
+        if (err) console.error('Error creating users table:', err.message);
+        else console.log('✅ Users table ready');
+    });
 
-    // Tasks table
     db.run(`
         CREATE TABLE IF NOT EXISTS tasks (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,9 +42,10 @@ db.serialize(() => {
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
         )
-    `);
-
-    console.log('✅ Database tables created successfully!');
+    `, (err) => {
+        if (err) console.error('Error creating tasks table:', err.message);
+        else console.log('✅ Tasks table ready');
+    });
 });
 
 module.exports = db;
