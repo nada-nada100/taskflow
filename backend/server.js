@@ -1,15 +1,18 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
-// Use Render's port or 5000 for local
 const port = process.env.PORT || 5000;
 
 // Import database
 require('./config/db');
 
-// Middleware
-app.use(cors());
+// CORS - Allow all origins
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 
 // Import routes
