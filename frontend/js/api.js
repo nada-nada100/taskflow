@@ -1,7 +1,7 @@
 // frontend/js/api.js - API helper functions
 
-// Base URL for your backend
-const API_BASE_URL = 'https://taskflow-backend-z1uw.onrender.com/api';
+// Base URL for your backend (Updated for Render deployment)
+const API_BASE_URL = 'https://taskflow-backend-zluw.onrender.com/api';
 
 // Get token from localStorage
 const getToken = () => {

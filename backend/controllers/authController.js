@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const userModel = require('../models/userModel');
 const { isValidEmail, isValidPassword, sanitize } = require('../utils/validation');
 
-// Secret key for JWT
+// ✅ FIXED: Add JWT_SECRET here
 const JWT_SECRET = 'your-super-secret-key-change-this-in-production';
 
 // Register function
