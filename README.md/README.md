@@ -9,13 +9,13 @@ A full-stack task management application with user authentication, task CRUD ope
 ## 📸 Screenshots
 
 ### Login Page
-c:\Users\user\OneDrive\Images\Captures d’écran\Screenshot 2026-09-08 102103.png
+![Login Page](screenshots/login.png)
 
 ### Dashboard
-c:\Users\user\OneDrive\Images\Captures d’écran\Screenshot 2026-09-08 101408.png
+![Dashboard](screenshots/dashboard.png)
 
 ### Dark Mode
-c:\Users\user\OneDrive\Images\Captures d’écran\Screenshot 2026-09-08 101932.png
+![Dark Mode](screenshots/dark-mode.png)
 
 ## 🛠️ Tech Stack
 
