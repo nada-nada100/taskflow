@@ -15,7 +15,7 @@ A full-stack task management application with user authentication, task CRUD ope
 ![Dashboard](screenshots/dashboard.png)
 
 ### Dark Mode
-![Dark Mode](screenshots/dark-mode.png)
+![Dark Mode](c:\Users\user\OneDrive\Images\Captures d’écran\Screenshot 2026-09-08 101932.png)
 
 ## 🛠️ Tech Stack
 
