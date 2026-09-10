@@ -1,7 +1,18 @@
 // frontend/js/api.js - API helper functions
 
-// Base URL for your backend (Updated for Render deployment)
-const API_BASE_URL = 'https://taskflow-backend-zluw.onrender.com/api';
+// ============================================
+// AUTO-DETECT ENVIRONMENT
+// ============================================
+const isLocalhost = window.location.hostname === 'localhost' || 
+                    window.location.hostname === '127.0.0.1' ||
+                    window.location.hostname === '';
+
+const API_BASE_URL = isLocalhost
+    ? 'http://localhost:5000/api'
+    : 'https://taskflow-backend-z1uw.onrender.com/api';
+
+console.log('API Base URL:', API_BASE_URL);
+// ============================================
 
 // Get token from localStorage
 const getToken = () => {
