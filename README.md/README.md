@@ -1,12 +1,16 @@
-# 📋 TaskFlow - Task Management App
+#  TaskFlow - Task Management App
 
 A full-stack task management application with user authentication, task CRUD operations, filtering, search, and data visualization.
 
-## 🚀 Live Demo
+##  Live Demo
 
-[Add your deployed URL here when done]
+**Frontend:** [https://taskflow-frontend-qq4r.onrender.com](https://taskflow-frontend-qq4r.onrender.com)
 
-## 📸 Screenshots
+**Backend:** [https://taskflow-backend-z1uw.onrender.com](https://taskflow-backend-z1uw.onrender.com)
+
+**GitHub:** [https://github.com/nada-nada100/taskflow](https://github.com/nada-nada100/taskflow)
+
+##  Screenshots
 
 ### Login Page
 ![Login Page](screenshots/login.png)
@@ -17,7 +21,7 @@ A full-stack task management application with user authentication, task CRUD ope
 ### Dark Mode
 ![Dark Mode](screenshots/dark-mode.png)
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Node.js** - JavaScript runtime
@@ -32,7 +36,7 @@ A full-stack task management application with user authentication, task CRUD ope
 - **JavaScript (ES Modules)** - Functionality
 - **Chart.js** - Data visualization
 
-## ✨ Features
+##  Features
 
 - ✅ User Registration & Login
 - ✅ JWT Authentication
@@ -82,7 +86,7 @@ taskflow/
 
 text
 
-## 🔧 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Node.js (v14 or higher)
